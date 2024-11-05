@@ -1,0 +1,59 @@
+{
+  "name": "multirokudesktopapp",
+  "version": "1.0.0",
+  "description": "Control Multiple Roku Devices",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "electron-builder install-app-deps",
+    "start": "electron --enable-logging .",
+    "rebuild": "electron-rebuild",
+    "build": "electron-builder build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krazybean/MultiRokuDesktopApp.git"
+  },
+  "keywords": [
+    "roku",
+    "python",
+    "electronjs"
+  ],
+  "author": "Juan Castro <juan.castro.dev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/krazybean/MultiRokuDesktopApp/issues"
+  },
+  "homepage": "https://github.com/krazybean/MultiRokuDesktopApp#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/free-regular-svg-icons": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "better-sqlite3": "^11.3.0",
+    "bootstrap": "^5.3.3",
+    "electron-db": "^0.15.7",
+    "electron-reload": "^2.0.0-alpha.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.7.1",
+    "nedb": "^1.8.0",
+    "python-shell": "^5.0.0",
+    "roku-client": "^5.2.0"
+  },
+  "build": {
+    "appId": "multirokudesktopapp",
+    "mac": {
+      "icon": "../assets/icons/compass_logo_icon.icns"
+    },
+    "win": {
+      "icon": "assets/icons/compass_logo_256px.ico"
+    },
+    "linux": {
+      "icon": "../assets/icons/compass_logo_256px.png"
+    }
+  },
+  "devDependencies": {
+    "electron": "^32.2.0",
+    "electron-builder": "^25.0.5",
+    "electron-rebuild": "^3.2.9"
+  }
+}

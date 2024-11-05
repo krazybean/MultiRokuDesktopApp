@@ -160,3 +160,18 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+# Personal stuff to hide, just a side project
+TestScript/
+
+# Hide local sqlite .db files
+*.db
+
+# Hide node_modules install dir
+node_modules/
+
+# Don't need this anyways since it will be generated
+package-lock.json
+
+# Hide mac stuff
+.DS_Store
